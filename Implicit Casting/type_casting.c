@@ -16,7 +16,7 @@ int main(void)
     return 1;
   }
 
-  printf("Enter a decimal number: ");
+  printf("Enter a decimal number(float): ");
   fflush(stdout);
   if (scanf("%f", &mediumNumber) != 1)
   {
@@ -26,11 +26,11 @@ int main(void)
 
    // Small to large
    largeNumber = smallNumber;
-   printf("Small to large: %.1f\n", largeNumber);
+   printf("Integer to double: %.1f\n", largeNumber);
 
    // Medium to Large
    largeNumber = mediumNumber;
-   printf("Medium to Large: %.1f\n", largeNumber);
+   printf("float to double: %.1f\n", largeNumber);
   
    return 0;
 }
