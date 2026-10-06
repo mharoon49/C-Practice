@@ -7,6 +7,8 @@ int main()
     double volume;
 
     // Checking input
+    printf("Enter radius: ");
+    fflush(stdout);
     if (scanf("%lf", &radius) != 1)
     {
         printf("Enter a valid radius!\n");
