@@ -26,33 +26,39 @@ if (op == '+') {
   add (a, b);
   return 0;
 }
+
 else if (op == '-') {
   subtract (a, b);
   return 0;
 }
+
 else if (op == '*') {
   multiply (a, b);
   return 0;
 }
+
 else if (op == '/') {
+
   if (b == 0) {
     divide (a, b);
     return 1;
   }
+  
   else {
     divide (a, b);
     return 0;
   }
 }
+
 else if (op == '^') {
   power (a, b);
   return 0;
 }
+
 else {
     printf("Invalid input!\n");
     return 1;
   }
-
 }
 
 // For addition
