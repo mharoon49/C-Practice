@@ -5,6 +5,7 @@ int main(void)
 {
   int age;
 
+  // Prompting user for input and checking valid age
   printf("Person age: ");
   fflush(stdout);
   if (scanf("%d", &age) != 1)
@@ -19,6 +20,7 @@ int main(void)
   }
   
 
+  // Checking eligibility 
   bool isEligible = (age >= 65);
 
   // Printing results
@@ -26,6 +28,7 @@ int main(void)
   {
     printf("Person is eligible for discout.\n");
   }
+    
   else
   {
     printf("Person is not eligible for discout.\n");
