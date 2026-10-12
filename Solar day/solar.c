@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Program to validate solar day conditions and calculate output
 int main(void) 
 {
   // Declaration
@@ -23,7 +24,7 @@ int main(void)
   }
 
   // Checking Temperature
-  printf("Temperature: ");
+  printf("Temperature (°C): ");
   fflush(stdout);
   if (scanf("%f", &temp) != 1) {
     printf("Invalid Temperature!\n");
