@@ -8,11 +8,11 @@ int main()
 
   // Declaration
   int choice, index;
-  char word[100], copied[100];
+  char word[100];
 
   // Prompting and fetching user's word
   printf("Enter any word: ");
-  if(scanf("%s", word) != 1) {
+  if(scanf("%99s", word) != 1) {
     printf("Invalid Input!");
     return 1;
   }
@@ -58,7 +58,7 @@ int main()
     }
     break;
   case 4:
-    printf("Choose correct index between 0-%d: ", (length - 1));
+    printf("Choose correct index between 0-%d: ", length - 1);
     if(scanf("%d", &index) != 1 || index > (length - 1) || index < 0) {
       printf("Invalid input!");
       return 1;
